@@ -38,6 +38,8 @@ We can create Dashboards from the analytics data by using Power BI tool, which h
 
 ## Result
 The result of the whole ETL(Extract, Transform, Load) Data pipeline can be seen in the below reports/ Dashboards.
+
+Some of the insights that we found from the data are which countries have won the number of Gold, Silver, Bronze and presented them in a bar chart using the Synapse analytics service.
 ![image](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/e61533bb-d91c-4263-9981-90a789a7fb0f)
 
 
