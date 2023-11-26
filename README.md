@@ -12,8 +12,8 @@ Finally, we will prepare the dashboard using power BI, or Looker Studio or Table
 Basics of Python and SQL
 
 Azure Account
-## Data Sources
-Dataset from Kaggle - 2021 Olympics in Tokyo
+## Data Source
+Dataset from Kaggle - 2021 Olympics in Tokyo[Download here][https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo?select=Teams.xlsx]
 ## Services/Tools Used
 1. Azure Data Factory
 2. ADLS Gen2
