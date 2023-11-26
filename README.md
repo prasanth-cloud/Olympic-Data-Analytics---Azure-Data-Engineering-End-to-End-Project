@@ -36,5 +36,14 @@ The penultimate step here after doing transformation is to do some analyticsby l
 
 We can create Dashboards from the analytics data by using Power BI tool, which helps us to find the solutions in an easy and quick way by looking at the dashboard or at the reports.
 
+## Result
+The result of the whole ETL(Extract, Transform, Load) Data pipeline can be seen in the below reports/ Dashboards.
+![image](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/e61533bb-d91c-4263-9981-90a789a7fb0f)
+
+
+![SQL script 3 (1)](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/4baff88c-339a-448c-83de-001b10e6629b)
+![SQL script 3](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/cb162d06-7085-4bec-bae1-0d5d721137bd)
+![SQL script 3 (3)](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/72ca2ea7-27b3-4061-b132-fd8588bc27a1)
+![SQL script 3 (2)](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/bd26fb00-c54b-4c72-acc4-bc6023f2ab06)
 
 
