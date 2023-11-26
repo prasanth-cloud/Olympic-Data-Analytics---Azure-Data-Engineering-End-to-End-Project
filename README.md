@@ -12,8 +12,10 @@ Finally, we will prepare the dashboard using power BI, or Looker Studio or Table
 Basics of Python and SQL
 
 Azure Account
+
 ## Data Source
 Dataset from Kaggle - 2021 Olympics in Tokyo[Download here][https://www.kaggle.com/datasets/arjunprasadsarkhel/2021-olympics-in-tokyo?select=Teams.xlsx]
+
 ## Services/Tools Used
 1. Azure Data Factory
 2. ADLS Gen2
@@ -21,11 +23,18 @@ Dataset from Kaggle - 2021 Olympics in Tokyo[Download here][https://www.kaggle.c
 4. Azure Synapse Analytics
 5. Power BI or Looker
 ## Data Ingestion
+We already understood that we are using the Kaggle data - 2021 Olympics as our data source, then we will copy the data from data source to the ADLS using Azure data factory by creating linked service between azure data factory and the data source.
 
 ## Data Transformation
+After the data gets stored in the Data Storage, then we will make another connection to azure databricks using an App registration service, then we will perform som pyspark transformations to filter the data , and change the datatypes of the data according to the requirement.
 
+The used pyspark code in the project is as follows:
+
+After applying the above tranformations, again we will store the data into ADLS (data storage). From there, the azure synapse analytics uses the data from ADLS.
 ## Data Loading
+The penultimate step here after doing transformation is to do some analyticsby loading the data to azure synapse analytics and find various insights from the transformed data.
 
+We can create Dashboards from the analytics data by using Power BI tool, which helps us to find the solutions in an easy and quick way by looking at the dashboard or at the reports.
 
 
 
