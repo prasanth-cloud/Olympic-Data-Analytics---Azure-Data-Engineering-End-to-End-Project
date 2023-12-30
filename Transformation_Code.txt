@@ -19,7 +19,7 @@ extra_configs = configs)
 %fs
 ls "/mnt/tokyoolympic"
 
-If you get an error here , add the role assignment and proceed, you will see the output mentioned in the image.
+If you get an error here , add the role assignment and proceed, you will see the output from the attached images.
 
 
 athletes = spark.read.format("csv").option("header","true").option("inferSchema","true").load("/mnt/tokyoolympic/raw_data21/athletes.csv")
