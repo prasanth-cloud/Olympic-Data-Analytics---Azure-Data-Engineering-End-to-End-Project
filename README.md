@@ -66,7 +66,7 @@ After applying the above tranformations, again we will store the data into ADLS 
 <img width="769" alt="Transformed_data" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/13d5014c-a697-4c43-af47-ff95a4640ac4">
 
 ## Data Loading
-The penultimate step here after doing transformation is to do some analyticsby loading the data to azure synapse analytics and find various insights from the transformed data.
+The penultimate step here after doing transformation is to do some analytics by loading the data to azure synapse analytics and find various insights from the transformed data.
 
 <img width="958" alt="Asaanalysis" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/6798df32-a890-400d-94c2-1f8f22a853a5">
 
