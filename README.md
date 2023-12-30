@@ -21,7 +21,8 @@ Dataset from Kaggle - 2021 Olympics in Tokyo[Download here][https://www.kaggle.c
 2. ADLS Gen2
 3. Azure Databricks
 4. Azure Synapse Analytics
-5. Power BI or Looker
+5. App Registrations
+6. PowerBI or Looker
 ## Data Ingestion
 We already understood that we are using the Kaggle data - 2021 Olympics as our data source, then we will copy the data from data source to the ADLS using Azure data factory by creating linked service between azure data factory and the data source.
 Firstly, we have created the Storage Account and containers with folders for storing the raw data and transformed data.
