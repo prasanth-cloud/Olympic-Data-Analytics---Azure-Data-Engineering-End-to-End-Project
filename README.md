@@ -25,17 +25,23 @@ Dataset from Kaggle - 2021 Olympics in Tokyo[Download here][https://www.kaggle.c
 6. PowerBI or Looker
 ## Data Ingestion
 We already understood that we are using the Kaggle data - 2021 Olympics as our data source, then we will copy the data from data source to the ADLS using Azure data factory by creating linked service between azure data factory and the data source.
+
 Firstly, we have created the Storage Account and containers with folders for storing the raw data and transformed data.
+
 <img width="958" alt="storageacccondir" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/1f86ad3d-1353-4924-88fa-45594f3978b6">
+
 Next, we will create the Azure Data Factory and make a connection with the source by creating linked connections.
+
 <img width="958" alt="ADFlaunched" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/146b02ce-88e4-45d8-9715-893dfbc48128">
 
 <img width="958" alt="ADFdataingestion" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/52d6071f-bc41-44c0-9ab7-97d4dfd7734a">
 
 
 ## Data Transformation
-After the data gets stored in the Data Storage, then we will make another connection to azure databricks using an App registration service, 
+After the data gets stored in the Data Storage, then we will make another connection to azure databricks using an App registration service.
+
 <img width="956" alt="Appregistered" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/8fddf288-465b-47ca-8bf3-703724ce1279">
+
 <img width="959" alt="Certificatesecrets" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/7180328f-06b0-4fd1-b505-632adaf89188">
 
 Note: Do not share the Client ID and Tenant Id with anyone and also the secret value.
@@ -43,19 +49,25 @@ Note: Do not share the Client ID and Tenant Id with anyone and also the secret v
 there we will perform some pyspark transformations to filter the data , and change the datatypes of the data according to the requirement.
 
 The used pyspark code in the project is under the code section. During the process , you might some error due to the access, there we should provide an access to the Storage Blob Data Contributor.
+
 <img width="931" alt="givingaccesstoapp" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/f73b0cfc-e744-4ef4-93aa-d84e9a01a5b6">
+
 <img width="679" alt="transformationmount" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/510eeed1-781e-4f5d-aa16-1005737e033c">
+
 <img width="821" alt="questionanalysis" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/eb79d3d9-c912-4547-975e-dbbd0d2dd6ff">
+
 <img width="821" alt="questionanalysis3" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/093965fb-da99-4806-af03-9a6214481eab">
 
 
 After applying the above tranformations, again we will store the data into ADLS (data storage). From there, the azure synapse analytics uses the data from ADLS.
+
 <img width="774" alt="Transformed_datafolders" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/e728592b-c02d-480d-a37b-b6a0387e05b9">
 
 <img width="769" alt="Transformed_data" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/13d5014c-a697-4c43-af47-ff95a4640ac4">
 
 ## Data Loading
 The penultimate step here after doing transformation is to do some analyticsby loading the data to azure synapse analytics and find various insights from the transformed data.
+
 <img width="958" alt="Asaanalysis" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/6798df32-a890-400d-94c2-1f8f22a853a5">
 
 
@@ -65,7 +77,7 @@ We can create Dashboards from the analytics data by using Power BI tool, which h
 The result of the whole ETL(Extract, Transform, Load) Data pipeline can be seen in the below reports/ Dashboards.
 <img width="926" alt="piecharttransformation" src="https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/966f3fb4-f172-4fe2-9684-fb15374b8b93">
 
-Some of the insights that we found from the data are which countries have won the number of Gold, Silver, Bronze and presented them in a Pie chart using the Synapse analytics service.
+Some of the insights that we found from the data are which countries have won the number of Gold, Silver, Bronze and presented them in a Bar,Pie chart using the Synapse analytics service.
 
 ![image](https://github.com/prasanth-cloud/Olympic-Data-Analytics---Azure-Data-Engineering-End-to-End-Project/assets/79701423/e61533bb-d91c-4263-9981-90a789a7fb0f)
 
